@@ -23,7 +23,7 @@ public class Main_Menu extends Activity implements View.OnClickListener {
         buttonAdd.setOnClickListener(this);
         buttonPay.setOnClickListener(this);
 
-        final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
+
     }
 
     @Override

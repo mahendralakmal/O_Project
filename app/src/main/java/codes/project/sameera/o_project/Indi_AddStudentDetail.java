@@ -1,10 +1,17 @@
 package codes.project.sameera.o_project;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * Created by sameera on 8/28/14.
@@ -13,6 +20,15 @@ public class Indi_AddStudentDetail extends Activity implements View.OnClickListe
     EditText fName,mName, Address, sName, hNo, mNo, presentSpo;
     Button save;
     DatabaseAdapter databaseHelper;
+    private ImageButton ib;
+    private Calendar cal;
+    private int day;
+    private int month;
+    private int year;
+    private EditText et;
+
+    private Calendar dateTime=Calendar.getInstance();
+    private SimpleDateFormat dateFormatter = new SimpleDateFormat("MMMM dd, yyyy");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +42,15 @@ public class Indi_AddStudentDetail extends Activity implements View.OnClickListe
         presentSpo = (EditText) findViewById(R.id.enterpres_sport);
         
         save = (Button) findViewById(R.id.btnsave);
-        
+
+        ib = (ImageButton) findViewById(R.id.imageButton1);
+        cal = Calendar.getInstance();
+        day = cal.get(Calendar.DAY_OF_MONTH);
+        month = cal.get(Calendar.MONTH);
+        year = cal.get(Calendar.YEAR);
+        et = (EditText) findViewById(R.id.editText);
+
+        ib.setOnClickListener(this);
         save.setOnClickListener(this);
         
         databaseHelper = new DatabaseAdapter(this);
@@ -35,10 +59,31 @@ public class Indi_AddStudentDetail extends Activity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        addStudent(v);
+        switch (v.getId()){
+            case R.id.btnsave:
+                addStudent(v);
+                break;
+            case R.id.imageButton1:
+                showDialog(0);
+                break;
+        }
+
         
     }
 
+    @Override
+    @Deprecated
+    protected Dialog onCreateDialog(int id) {
+        return new DatePickerDialog(this, datePickerListener, year, month, day);
+    }
+
+    private DatePickerDialog.OnDateSetListener datePickerListener = new DatePickerDialog.OnDateSetListener() {
+        public void onDateSet(DatePicker view, int selectedYear,
+                              int selectedMonth, int selectedDay) {
+            et.setText(selectedDay + " / " + (selectedMonth + 1) + " / "
+                    + selectedYear);
+        }
+    };
     public void addStudent(View view){
         String fname = fName.getText().toString();
         String mname = mName.getText().toString();
@@ -56,13 +101,10 @@ public class Indi_AddStudentDetail extends Activity implements View.OnClickListe
             Message.message(this,"Succecsfuly inserted to data");
 
         }
-
     }
 
     public void viewDetails(View view){
         String data = databaseHelper.getAllData();
         Message.message(this,data);
     }
-
-
 }
