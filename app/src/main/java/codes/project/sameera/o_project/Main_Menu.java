@@ -26,7 +26,7 @@ public class Main_Menu extends Activity implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()){
             case 1:
-                Intent i = new Intent(this,AddStudent_details.class);
+                Intent i = new Intent(this,Group_AddStudent_details.class);
                 break;
             case 2:
                 break;

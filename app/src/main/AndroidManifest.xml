@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name=".Add_test"
+        <activity android:name=".Group_Add_test"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -19,25 +19,13 @@
 
         </activity>
 
-        <activity android:name="AddStudent_details"
+        <activity android:name=".Group_AddStudent_details"
             android:label="@string/app_name">
 
         </activity>
 
 
-        <activity android:name="Main"
-            android:label="Learn2Crack USER PANEL">
 
-        </activity>
-
-        <activity android:name="PasswordReset"
-            android:label="@string/app_name">
-
-        </activity>
-        <activity android:name="ChangePassword"
-            android:label="@string/app_name">
-
-        </activity>
 
 
 

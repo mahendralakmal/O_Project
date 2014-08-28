@@ -131,7 +131,7 @@ public class Login extends Activity implements OnClickListener{
                 success = json.getInt(TAG_SUCCESS);
                 if (success == 1) {
                     Log.d("Login Successful!", json.toString());
-                    Intent i = new Intent(Login.this, AddStudent_details.class);
+                    Intent i = new Intent(Login.this, Group_AddStudent_details.class);
                     finish();
                     startActivity(i);
                     return json.getString(TAG_MESSAGE);
