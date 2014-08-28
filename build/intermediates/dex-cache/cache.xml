@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/samd90/Downloads/samd90-o_project-eca9957d6bb2/app/build/intermediates/pre-dexed/debug/classes-45a846cd3bcafa6b27f857266b582f9ed4893340.jar"
+        jar="/home/samd90/Downloads/samd90-o_project-eca9957d6bb2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="/home/samd90/Downloads/samd90-o_project-eca9957d6bb2/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-55d75af5a3ff3cf0c38eec81c23433dadd35b19b.jar"
+        jar="/home/samd90/Downloads/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>
