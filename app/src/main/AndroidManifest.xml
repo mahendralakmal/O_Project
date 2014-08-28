@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name=".Group_Add_test"
+        <activity android:name=".Splash"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -23,11 +23,6 @@
             android:label="@string/app_name">
 
         </activity>
-
-
-
-
-
 
     </application>
     <!-- Allow to connect with internet and to know the current network state-->
