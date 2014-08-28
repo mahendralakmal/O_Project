@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 /**
@@ -20,15 +22,20 @@ public class Main_Menu extends Activity implements View.OnClickListener {
         buttonPay=(Button) findViewById(R.id.buttonPay);
         buttonAdd.setOnClickListener(this);
         buttonPay.setOnClickListener(this);
+
+        final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.anim_alpha);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case 1:
-                Intent i = new Intent(this,Group_AddStudent_details.class);
+            case R.id.buttonAdd:
+                Intent i = new Intent(this,Main_Student_detail.class);
+                startActivity(i);
                 break;
-            case 2:
+            case R.id.buttonPay:
+                Intent i2 = new Intent(this,Group_AddStudent_details.class);
+                startActivity(i2);
                 break;
             default:
                 break;

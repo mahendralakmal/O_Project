@@ -77,7 +77,6 @@ public class Login extends Activity implements OnClickListener{
         // TODO Auto-generated method stub
         //switch (v.getId()) {
            // case R.id.login:
-                new AttemptLogin().execute();
             //    break;
            // case R.id.register:
             // /   Intent i = new Intent(this, Register.class);
@@ -87,6 +86,10 @@ public class Login extends Activity implements OnClickListener{
            // default:
            //     break;
         //}
+
+        //new AttemptLogin().execute();
+        Intent i = new Intent(this,Main_Menu.class);
+        startActivity(i);
     }
 
     class AttemptLogin extends AsyncTask<String, String, String> {

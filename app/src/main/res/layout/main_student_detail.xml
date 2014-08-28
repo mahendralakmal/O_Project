@@ -7,24 +7,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Student Detail"
-        android:id="@+id/buttonAdd"
-        android:layout_gravity="center_horizontal"
+        android:text="Add Student by Group"
+        android:id="@+id/btn1"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="185dp"
+        android:layout_marginTop="190dp"
         android:background="#A2AB58"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Payment"
-        android:id="@+id/buttonPay"
-        android:layout_below="@+id/buttonAdd"
-        android:layout_alignLeft="@+id/buttonAdd"
-        android:layout_alignStart="@+id/buttonAdd"
-        android:layout_marginTop="58dp"
-        android:layout_alignRight="@+id/buttonAdd"
-        android:layout_alignEnd="@+id/buttonAdd"
+        android:text="Add Students By Indevidual"
+        android:id="@+id/btn2"
+        android:layout_below="@+id/btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
         android:background="#A2AB58"/>
 </RelativeLayout>
