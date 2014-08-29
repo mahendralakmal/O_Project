@@ -216,7 +216,8 @@
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/spinnerR"
         android:textColor="#F6F6F6"
-        android:background="@drawable/mybutton"/>
+        android:background="@drawable/mybutton"
+        android:layout_alignParentRight="true" />
         <Button
             android:textColor="#191919"
             android:textSize="19sp"

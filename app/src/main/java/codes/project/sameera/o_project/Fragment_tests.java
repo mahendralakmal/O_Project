@@ -21,8 +21,8 @@ public class Fragment_tests extends Fragment {
     }
 
     public void changeData(int index){
-        String[] test= getResources().getStringArray(R.array.test);
-        text.setText(test[index]);
+        String[] result= getResources().getStringArray(R.array.result);
+        text.setText(result[index]);
     }
 
 }

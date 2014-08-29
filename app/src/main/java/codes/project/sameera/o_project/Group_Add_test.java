@@ -62,7 +62,7 @@ public class Group_Add_test extends Activity implements Fragment_name_list.Commu
 
     @Override
     public void respond(int index) {
-        f2=(Fragment_tests) manager.findFragmentById(R.id.fragment2);
+        f2=(Fragment_tests) manager.findFragmentById(R.id.fragment);
 
             f2.changeData(index);
 

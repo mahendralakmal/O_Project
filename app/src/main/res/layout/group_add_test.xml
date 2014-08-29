@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:name="codes.project.sameera.o_project.Fragment_tests"
-        android:id="@+id/fragment2"
+        android:id="@+id/fragment"
         android:layout_below="@+id/fragment"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
