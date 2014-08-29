@@ -12,6 +12,7 @@ public class MainActivity extends Activity implements Fragment_name_list.Communi
     Fragment_name_list f1;
     Fragment_tests f2;
     FragmentManager manager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
